@@ -2,9 +2,7 @@
 
 
 while true; do
-	echo "Opening a gnome-terminal"
-	gnome-terminal
-	echo "Opening a gedit window"
-	gedit
+	source ~/.bashrc
+	roscore
 	sleep 60
 done
