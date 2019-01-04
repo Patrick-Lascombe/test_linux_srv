@@ -1,0 +1,10 @@
+[Unit]
+Description=SrvTest
+Wants=SrvTest.service
+Before=SrvTest.service
+
+[Service]
+ExecStart=/usr/local/bin/srv_test
+
+[Install]
+WantedBy=multi-user.target

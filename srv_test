@@ -1,0 +1,8 @@
+#!/bin/bash
+
+while true; do 
+	echo "hello_world" >> ~/hello_world.txt
+	source ~/.bashrc
+	#gnome-terminal cd ~/Ros_ws
+	sleep 60
+done
