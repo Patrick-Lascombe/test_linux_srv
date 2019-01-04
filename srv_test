@@ -1,8 +1,10 @@
 #!/bin/bash
 
-while true; do 
-	echo "hello_world" >> ~/hello_world.txt
-	source ~/.bashrc
-	#gnome-terminal cd ~/Ros_ws
+
+while true; do
+	echo "Opening a gnome-terminal"
+	gnome-terminal
+	echo "Opening a gedit window"
+	gedit
 	sleep 60
 done
