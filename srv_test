@@ -4,6 +4,7 @@
 while true; do
 	source .bashrc
 	source /opt/ros/melodic/setup.bash
+	echo $PWD
 	source Ros_ws/devel/setup.bash
 	export ROS_ROBOT_NAME=aucamville_test
 	export HW_CONNECTED=False
@@ -11,8 +12,8 @@ while true; do
 	export ROS_ROBOT_HW=v2
 	export HOME=/home/patrick
 	xhost +
-	HOME=/tmp 
-	XAUTHORITY=/tmp 
-	roslaunch keylo_bringup wyca.launch sim:=true
+	#HOME=/tmp 
+	#XAUTHORITY=/tmp 
+	gnome-terminal -- roslaunch keylo_bringup wyca.launch sim:=true
 	sleep 60
 done
