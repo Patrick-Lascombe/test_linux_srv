@@ -5,6 +5,6 @@ Before=SrvTest.service
 
 [Service]
 ExecStart=/usr/local/bin/srv_test
-
+WorkingDirectory=/home/patrick
 [Install]
 WantedBy=multi-user.target

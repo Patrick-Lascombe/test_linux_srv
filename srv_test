@@ -2,7 +2,10 @@
 
 
 while true; do
-	source ~/.bashrc
-	roscore
+	echo "DIR = $PWD"
+	source .bashrc
+	source /opt/ros/melodic/setup.bash
+	source Ros_ws/devel/setup.bash
+	roslaunch keylo_bringup test_no_front.launch sim:=true
 	sleep 60
 done
