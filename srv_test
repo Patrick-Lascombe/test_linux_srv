@@ -14,6 +14,7 @@ while true; do
 	xhost +
 	#HOME=/tmp 
 	#XAUTHORITY=/tmp 
+	#runuser -l 'patrick' -c 'gnome-terminal -- roslaunch keylo_bringup wyca.launch sim:=true'
 	gnome-terminal -- roslaunch keylo_bringup wyca.launch sim:=true
 	sleep 60
 done
