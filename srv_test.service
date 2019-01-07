@@ -4,7 +4,11 @@ Wants=SrvTest.service
 Before=SrvTest.service
 
 [Service]
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/run/user/1000/gdm/Xauthority"
 ExecStart=/usr/local/bin/srv_test
-WorkingDirectory=/home/patrick
+WorkingDirectory=/home/patrick 
+
 [Install]
-WantedBy=multi-user.target
+#WantedBy=multi-user.target
+WantedBy=graphical.target
