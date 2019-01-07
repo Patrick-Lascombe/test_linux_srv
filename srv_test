@@ -11,6 +11,8 @@ while true; do
 	export ROS_ROBOT_HW=v2
 	export HOME=/home/patrick
 	xhost +
-	roslaunch keylo_bringup test_no_front.launch sim:=true
+	HOME=/tmp 
+	XAUTHORITY=/tmp 
+	roslaunch keylo_bringup wyca.launch sim:=true
 	sleep 60
 done
